@@ -59,6 +59,116 @@ class S {
       args: [],
     );
   }
+
+  /// `Email`
+  String get email {
+    return Intl.message(
+      'Email',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get password {
+    return Intl.message(
+      'Password',
+      name: 'password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get name {
+    return Intl.message(
+      'Name',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Phone`
+  String get phone {
+    return Intl.message(
+      'Phone',
+      name: 'phone',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get login {
+    return Intl.message(
+      'Login',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome Back!`
+  String get welcomeBack {
+    return Intl.message(
+      'Welcome Back!',
+      name: 'welcomeBack',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login to your account`
+  String get loginToYourAccount {
+    return Intl.message(
+      'Login to your account',
+      name: 'loginToYourAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgot Password?`
+  String get forgotPassword {
+    return Intl.message(
+      'Forgot Password?',
+      name: 'forgotPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have an account?`
+  String get alreadyHaveAnAccount {
+    return Intl.message(
+      'Already have an account?',
+      name: 'alreadyHaveAnAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don't have an account?`
+  String get doNotHaveAnAccount {
+    return Intl.message(
+      'Don\'t have an account?',
+      name: 'doNotHaveAnAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register`
+  String get register {
+    return Intl.message(
+      'Register',
+      name: 'register',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
