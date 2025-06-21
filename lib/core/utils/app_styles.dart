@@ -1,80 +1,113 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
-class AppStyles {
-  static const TextStyle regular16 = TextStyle(
+abstract class AppStyles {
+  static TextStyle regular16(context) => TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w400,
-    fontFamily: 'Lato',
+    color: Theme.of(context).textTheme.bodyLarge?.color,
   );
-  static const TextStyle medium12 = TextStyle(
-    fontSize: 12,
-    fontWeight: FontWeight.w500,
-    fontFamily: 'Lato',
-  );
-  static const TextStyle medium16 = TextStyle(
-    fontSize: 16,
-    fontWeight: FontWeight.w500,
-    fontFamily: 'Lato',
-  );
-  static const TextStyle medium18 = TextStyle(
-    fontSize: 18,
-    fontWeight: FontWeight.w500,
-    fontFamily: 'Lato',
-  );
-  static const TextStyle medium20 = TextStyle(
+  static TextStyle regular20(context) => TextStyle(
     fontSize: 20,
-    fontWeight: FontWeight.w500,
-    fontFamily: 'Lato',
-  );
-  static const TextStyle medium28 = TextStyle(
-    fontSize: 28,
-    fontWeight: FontWeight.w500,
-    fontFamily: 'Lato',
-  );
-  static const TextStyle medium30 = TextStyle(
-    fontSize: 30,
-    fontWeight: FontWeight.w500,
-    fontFamily: 'Lato',
+    fontWeight: FontWeight.w400,
+    color: Theme.of(context).textTheme.bodyLarge?.color,
   );
 
-  static const TextStyle semiBold7 = TextStyle(
+  static TextStyle medium12(context) => TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: Theme.of(context).textTheme.bodyLarge?.color,
+  );
+
+  static TextStyle medium15(context) => TextStyle(
+    fontSize: 15,
+    fontWeight: FontWeight.w500,
+    color: Theme.of(context).textTheme.bodyLarge?.color,
+  );
+  static TextStyle medium16(context) => TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: Theme.of(context).textTheme.bodyLarge?.color,
+  );
+
+  static TextStyle medium18(context) => TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+    color: Theme.of(context).textTheme.bodyLarge?.color,
+  );
+
+  static TextStyle medium20(context) => TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w500,
+    color: Theme.of(context).textTheme.bodyLarge?.color,
+  );
+
+  static TextStyle medium28(context) => TextStyle(
+    fontSize: 28,
+    fontWeight: FontWeight.w500,
+    color: Theme.of(context).textTheme.bodyLarge?.color,
+  );
+
+  static TextStyle medium30(context) => TextStyle(
+    fontSize: 30,
+    fontWeight: FontWeight.w500,
+    color: Theme.of(context).textTheme.bodyLarge?.color,
+  );
+
+  static TextStyle semiBold7(context) => TextStyle(
     fontSize: 7,
     fontWeight: FontWeight.w600,
-    fontFamily: 'Lato',
+    color: Theme.of(context).textTheme.bodyLarge?.color,
   );
-  static const TextStyle semiBold10 = TextStyle(
+
+  static TextStyle semiBold10(context) => TextStyle(
     fontSize: 10,
     fontWeight: FontWeight.w600,
-    fontFamily: 'Lato',
+    color: Theme.of(context).textTheme.bodyLarge?.color,
   );
-  static const TextStyle semiBold12 = TextStyle(
+
+  static TextStyle semiBold12(context) => TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w600,
-    fontFamily: 'Lato',
+    color: Theme.of(context).textTheme.bodyLarge?.color,
   );
-  static const TextStyle semiBold14 = TextStyle(
+
+  static TextStyle semiBold14(context) => TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w600,
-    fontFamily: 'Lato',
+    color: Theme.of(context).textTheme.bodyLarge?.color,
   );
-  static const TextStyle semiBold15 = TextStyle(
+
+  static TextStyle semiBold15(context) => TextStyle(
     fontSize: 15,
     fontWeight: FontWeight.w600,
-    fontFamily: 'Lato',
+    color: Theme.of(context).textTheme.bodyLarge?.color,
   );
-  static const TextStyle semiBold20 = TextStyle(
+  static TextStyle semiBold18(context) => TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: Theme.of(context).textTheme.bodyLarge?.color,
+  );
+
+  static TextStyle semiBold20(context) => TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.w600,
-    fontFamily: 'Lato',
+    color: Theme.of(context).textTheme.bodyLarge?.color,
   );
-  static const TextStyle semiBold25 = TextStyle(
+
+  static TextStyle semiBold25(context) => TextStyle(
     fontSize: 25,
     fontWeight: FontWeight.w600,
-    fontFamily: 'Lato',
+    color: Theme.of(context).textTheme.bodyLarge?.color,
   );
-  static const TextStyle semiBold40 = TextStyle(
+  static TextStyle semiBold30(context) => TextStyle(
+    fontSize: 30,
+    fontWeight: FontWeight.w600,
+    color: Theme.of(context).textTheme.bodyLarge?.color,
+  );
+
+  static TextStyle semiBold40(context) => TextStyle(
     fontSize: 40,
     fontWeight: FontWeight.w600,
-    fontFamily: 'Lato',
+    color: Theme.of(context).textTheme.bodyLarge?.color,
   );
 }

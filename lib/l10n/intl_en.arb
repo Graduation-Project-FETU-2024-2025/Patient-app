@@ -1,3 +1,14 @@
 {
-        "onboarding":"All Services for your health"
+        "onboarding":"All Services for your health",
+        "email":"Email",
+        "password":"Password",
+        "name":"Name",
+        "phone":"Phone",
+        "login":"Login",
+        "welcomeBack":"Welcome Back!",
+        "loginToYourAccount":"Login to your account",
+        "forgotPassword":"Forgot Password?",
+        "alreadyHaveAnAccount":"Already have an account?",
+        "doNotHaveAnAccount":"Don't have an account?",
+        "register":"Register"
 }

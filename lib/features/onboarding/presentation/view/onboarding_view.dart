@@ -8,6 +8,7 @@ import 'package:patient_app/core/routers/routing.dart';
 import 'package:patient_app/core/services/get_it.dart';
 import 'package:patient_app/core/utils/app_colors.dart';
 import 'package:patient_app/core/utils/app_images.dart';
+import 'package:patient_app/core/utils/app_styles.dart';
 import 'package:patient_app/core/widgets/custom_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:patient_app/generated/l10n.dart';
@@ -41,7 +42,7 @@ class OnboardingView extends StatelessWidget {
             Text(
               S.of(context).onboarding,
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headlineLarge,
+              style: AppStyles.semiBold40(context).copyWith(color: AppColors.primaryColor),
             ),
             const Spacer(),
             CustomButton(
