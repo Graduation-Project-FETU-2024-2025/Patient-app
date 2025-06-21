@@ -3,5 +3,6 @@ abstract class Routing {
   static const String onboarding = '/onboarding';
   static const String signIn = '/signIn';
   static const String signUp = '/signUp';
-  static const String home = '/main';
+  static const String main = '/main';
+  static const String forgetPassword = '/forgetPassword';
 }

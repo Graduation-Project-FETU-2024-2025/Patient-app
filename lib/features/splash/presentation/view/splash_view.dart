@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:patient_app/core/database/api/end_points.dart';
+import 'package:patient_app/core/database/cache/cache_keys.dart';
+import 'package:patient_app/core/database/cache/cashe_helper.dart';
+import 'package:patient_app/core/database/cache/secure_storage.dart';
 import 'package:patient_app/core/helpers/extentions.dart';
 import 'package:patient_app/core/routers/routing.dart';
+import 'package:patient_app/core/services/get_it.dart';
 import 'package:patient_app/core/utils/app_colors.dart';
 import 'package:patient_app/core/utils/app_icons.dart';
 
@@ -47,18 +52,17 @@ class _SplashViewState extends State<SplashView> {
   }
 
   _getInitRoute() async {
-    context.pushReplacementNamed(Routing.onboarding);
-    // final token = await SecureStorage.instance.getData(key: ApiKeys.token);
-    // bool isFirstTime =
-    //     getIt<CacheHelper>().getBool(key: CacheKeys.isFirstTime) ?? true;
-    // if (mounted) {
-    //   if (token != null) {
-    //     context.pushReplacementNamed(Routing.mainView);
-    //   } else if (!isFirstTime) {
-    //     context.pushReplacementNamed(Routing.signIn);
-    //   } else {
-    //     context.pushReplacementNamed(Routing.onboarding);
-    //   }
-    // }
+    final token = await SecureStorage.instance.getData(key: ApiKeys.token);
+    bool isFirstTime =
+        getIt<CacheHelper>().getBool(key: CacheKeys.isFirstTime) ?? true;
+    if (mounted) {
+      if (token != null) {
+        context.pushReplacementNamed(Routing.main);
+      } else if (!isFirstTime) {
+        context.pushReplacementNamed(Routing.signIn);
+      } else {
+        context.pushReplacementNamed(Routing.onboarding);
+      }
+    }
   }
 }

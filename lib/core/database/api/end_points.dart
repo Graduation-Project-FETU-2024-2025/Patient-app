@@ -5,21 +5,8 @@ class EndPoints {
   // endpoints
 
   //auth
-  static String auth = "api/Auth/";
-  static String signIn = "${auth}get-otp";
-  static String otp = "${auth}login";
-  static String getBranches = '/api/secure/Branch';
-  static String getBranchProducts = 'api/secure/Product/';
-
-  static String getAllSystemMedicines = 'api/secure/Product';
-
-  static String deleteMedicine = "api/secure/Product/";
-  static String addMedicine = "api/secure/Product";
-  static String updateMedicine = "api/secure/Product";
-  static String getMedicine = "api/secure/Product";
-  static String getOutOfStock = "api/secure/Product/out-of-stock";
-  static String getLastAdded = "api/secure/Product/last-added";
-  static String getProfile = "api/profile";
+  static String login = "api/auth/user/login";
+  
 }
 
 class ApiKeys {

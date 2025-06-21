@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:patient_app/core/utils/app_icons.dart';
 import 'package:patient_app/generated/l10n.dart';
 import '../helpers/extentions.dart';
@@ -93,7 +94,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           child: widget.prefixIcon,
         ),
         suffixIcon: widget.suffixIcon ??
-            (isValid ? Image.asset(AppIcons.svgsEmailCheckedIcon) : null),
+            (isValid ? SvgPicture.asset(AppIcons.svgsEmailCheckedIcon) : null),
       ),
     );
   }
