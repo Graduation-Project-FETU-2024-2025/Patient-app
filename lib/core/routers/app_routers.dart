@@ -4,6 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:patient_app/core/routers/routing.dart';
 import 'package:patient_app/core/services/get_it.dart';
+import 'package:patient_app/features/forget_password/presentation/view/email_view.dart';
+import 'package:patient_app/features/forget_password/presentation/view/otp_view.dart';
+import 'package:patient_app/features/forget_password/presentation/view/reset_password.dart';
+import 'package:patient_app/features/forget_password/view_model/otp_cubit/otp_cubit.dart';
+import 'package:patient_app/features/forget_password/view_model/send_otp_cubit/send_otp_cubit.dart';
 import 'package:patient_app/features/onboarding/presentation/view/onboarding_view.dart';
 import 'package:patient_app/features/sign_in/data/repository/sign_in_repo.dart';
 import 'package:patient_app/features/sign_in/presentation/view/sign_in_view.dart';
@@ -29,10 +34,24 @@ class AppRouters {
             child: const SignInView(),
           ),
         );
+      case Routing.emailView:
+        return _buildRoute(
+          BlocProvider(
+            create: (context) => SendOtpCubit(),
+            child: const EmailView(),
+          ),
+        );
       case Routing.signUp:
         return _buildRoute(const Scaffold());
+      case Routing.restPassword:
+        return _buildRoute(const ResetPassword());
       case Routing.forgetPassword:
-        return _buildRoute(const Scaffold());
+        return _buildRoute(BlocProvider(
+          create: (context) => OtpCubit(),
+          child: OtpView(
+            email: argument as String,
+          ),
+        ));
       case Routing.main:
         return _buildRoute(const Scaffold());
       default:

@@ -25,5 +25,9 @@ class AppImages {
   /// Assets for imagesUnvisable
   /// assets/images/unvisable.png
   static const String imagesUnvisable = "assets/images/unvisable.png";
+
+  /// Assets for imagesResetPassword
+  /// assets/images/reset_password.png
+  static const String imagesResetPassword = "assets/images/reset_password.png";
 }
 

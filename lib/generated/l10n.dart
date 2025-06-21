@@ -169,6 +169,116 @@ class S {
       args: [],
     );
   }
+
+  /// `Enter your email`
+  String get enterYourEmail {
+    return Intl.message(
+      'Enter your email',
+      name: 'enterYourEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter OTP`
+  String get enterOTP {
+    return Intl.message(
+      'Enter OTP',
+      name: 'enterOTP',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter OTP sent to`
+  String get enterOTPSentTo {
+    return Intl.message(
+      'Enter OTP sent to',
+      name: 'enterOTPSentTo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Didn't receive OTP?`
+  String get dontReceiveOTP {
+    return Intl.message(
+      'Didn\'t receive OTP?',
+      name: 'dontReceiveOTP',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Resend OTP`
+  String get resendOTP {
+    return Intl.message(
+      'Resend OTP',
+      name: 'resendOTP',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Next`
+  String get next {
+    return Intl.message(
+      'Next',
+      name: 'next',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OTP sent successfully`
+  String get otpSent {
+    return Intl.message(
+      'OTP sent successfully',
+      name: 'otpSent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reset Password`
+  String get resetPassword {
+    return Intl.message(
+      'Reset Password',
+      name: 'resetPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter a new password to reset the password on your account. We'll ask for this password whenever you log in.`
+  String get enterNewPassword {
+    return Intl.message(
+      'Enter a new password to reset the password on your account. We\'ll ask for this password whenever you log in.',
+      name: 'enterNewPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New Password`
+  String get newPassword {
+    return Intl.message(
+      'New Password',
+      name: 'newPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Confirm Password`
+  String get confirmPassword {
+    return Intl.message(
+      'Confirm Password',
+      name: 'confirmPassword',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

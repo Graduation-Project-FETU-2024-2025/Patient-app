@@ -10,5 +10,16 @@
         "forgotPassword":"Forgot Password?",
         "alreadyHaveAnAccount":"Already have an account?",
         "doNotHaveAnAccount":"Don't have an account?",
-        "register":"Register"
+        "register":"Register",
+        "enterYourEmail":"Enter your email",
+        "enterOTP":"Enter OTP",
+        "enterOTPSentTo":"Enter OTP sent to",
+        "dontReceiveOTP":"Didn't receive OTP?",
+        "resendOTP":"Resend OTP",
+        "next":"Next",
+        "otpSent":"OTP sent successfully",
+        "resetPassword":"Reset Password",
+        "enterNewPassword":"Enter a new password to reset the password on your account. We'll ask for this password whenever you log in.",
+        "newPassword":"New Password",
+        "confirmPassword":"Confirm Password"
 }

@@ -59,7 +59,7 @@ class SignInForm extends StatelessWidget {
             alignment: AlignmentDirectional.topEnd,
             child: TextButton(
               onPressed: () {
-                context.pushNamed(Routing.forgetPassword);
+                context.pushNamed(Routing.emailView);
               },
               child: Text(
                 S.of(context).forgotPassword,
