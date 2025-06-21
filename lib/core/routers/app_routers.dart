@@ -3,7 +3,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:patient_app/core/routers/routing.dart';
+import 'package:patient_app/core/services/get_it.dart';
 import 'package:patient_app/features/onboarding/presentation/view/onboarding_view.dart';
+import 'package:patient_app/features/sign_in/data/repository/sign_in_repo.dart';
 import 'package:patient_app/features/sign_in/presentation/view/sign_in_view.dart';
 import 'package:patient_app/features/sign_in/presentation/view_model/sign_in_cubit/sign_in_cubit.dart';
 import 'package:patient_app/features/splash/presentation/view/splash_view.dart';
@@ -23,10 +25,16 @@ class AppRouters {
       case Routing.signIn:
         return _buildRoute(
           BlocProvider(
-            create: (context) => SignInCubit(),
+            create: (context) => SignInCubit(getIt<SignInRepo>()),
             child: const SignInView(),
           ),
         );
+      case Routing.signUp:
+        return _buildRoute(const Scaffold());
+      case Routing.forgetPassword:
+        return _buildRoute(const Scaffold());
+      case Routing.main:
+        return _buildRoute(const Scaffold());
       default:
         return _buildRoute(
           Scaffold(

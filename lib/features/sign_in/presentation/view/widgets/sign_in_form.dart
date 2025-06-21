@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
+import 'package:patient_app/core/helpers/extentions.dart';
+import 'package:patient_app/core/routers/routing.dart';
 import 'package:patient_app/core/utils/app_colors.dart';
 import 'package:patient_app/core/utils/app_images.dart';
 import 'package:patient_app/core/utils/app_styles.dart';
@@ -57,7 +59,7 @@ class SignInForm extends StatelessWidget {
             alignment: AlignmentDirectional.topEnd,
             child: TextButton(
               onPressed: () {
-                // TODO: Navigate to forgot password screen
+                context.pushNamed(Routing.forgetPassword);
               },
               child: Text(
                 S.of(context).forgotPassword,
