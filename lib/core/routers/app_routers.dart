@@ -1,9 +1,11 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:patient_app/core/routers/routing.dart';
 import 'package:patient_app/features/onboarding/presentation/view/onboarding_view.dart';
 import 'package:patient_app/features/sign_in/presentation/view/sign_in_view.dart';
+import 'package:patient_app/features/sign_in/presentation/view_model/sign_in_cubit/sign_in_cubit.dart';
 import 'package:patient_app/features/splash/presentation/view/splash_view.dart';
 
 class AppRouters {
@@ -18,9 +20,12 @@ class AppRouters {
         return _buildRoute(
           const OnboardingView(),
         );
-        case Routing.signIn:
+      case Routing.signIn:
         return _buildRoute(
-          const SignInView(),
+          BlocProvider(
+            create: (context) => SignInCubit(),
+            child: const SignInView(),
+          ),
         );
       default:
         return _buildRoute(

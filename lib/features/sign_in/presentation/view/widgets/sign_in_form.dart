@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
 import 'package:patient_app/core/utils/app_colors.dart';
 import 'package:patient_app/core/utils/app_images.dart';
 import 'package:patient_app/core/utils/app_styles.dart';
 import 'package:patient_app/core/widgets/custom_text_form_field.dart';
+import 'package:patient_app/features/sign_in/presentation/view_model/sign_in_cubit/sign_in_cubit.dart';
 import 'package:patient_app/generated/l10n.dart';
 
 class SignInForm extends StatelessWidget {
@@ -13,9 +15,11 @@ class SignInForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Form(
+      key: context.read<SignInCubit>().formKey,
       child: Column(
         children: [
           CustomTextFormField(
+            controller: context.read<SignInCubit>().emailController,
             hintText: S.of(context).email,
             keyboardType: TextInputType.emailAddress,
             prefixIcon: Padding(
@@ -29,6 +33,7 @@ class SignInForm extends StatelessWidget {
           ),
           Gap(20.h),
           CustomTextFormField(
+            controller: context.read<SignInCubit>().passwordController,
             hintText: S.of(context).password,
             obscureText: true,
             keyboardType: TextInputType.visiblePassword,
