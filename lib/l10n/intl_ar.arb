@@ -10,5 +10,17 @@
         "forgotPassword":"هل نسيت كلمة المرور؟",
         "alreadyHaveAnAccount":"هل لديك حساب بالفعل؟",
         "doNotHaveAnAccount":"ليس لديك حساب؟",
-        "register":"تسجيل"
+        "register":"تسجيل",
+        "enterYourEmail":"أدخل بريدك الإلكتروني",
+        "enterOTP":"أدخل رمز إعادة التعيين",
+        "enterOTPSentTo":"أدخل رمز إعادة التعيين المرسل إلى",
+        "dontReceiveOTP":"لم يتم الاستلام؟",
+        "resendOTP":"إعادة إرسال",
+        "next":"التالى",
+        "otpSent":"تم إرسال رمز إعادة التعيين بنجاح",
+        "resetPassword":"إعادة تعيين كلمة المرور",
+        "enterNewPassword":"أدخل كلمة مرور جديدة لإعادة تعيين كلمة المرور على حسابك. سنطلب منك هذه الكلمة السرية كلما قمت بتسجيل الدخول.",
+        "newPassword":"كلمة مرور جديدة",
+        "confirmPassword":"تأكيد كلمة المرور"
+
 }

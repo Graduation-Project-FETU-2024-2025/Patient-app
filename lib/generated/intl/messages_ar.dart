@@ -24,19 +24,38 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("هل لديك حساب بالفعل؟"),
+        "confirmPassword":
+            MessageLookupByLibrary.simpleMessage("تأكيد كلمة المرور"),
         "doNotHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
+        "dontReceiveOTP":
+            MessageLookupByLibrary.simpleMessage("لم يتم الاستلام؟"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "enterNewPassword": MessageLookupByLibrary.simpleMessage(
+            "أدخل كلمة مرور جديدة لإعادة تعيين كلمة المرور على حسابك. سنطلب منك هذه الكلمة السرية كلما قمت بتسجيل الدخول."),
+        "enterOTP":
+            MessageLookupByLibrary.simpleMessage("أدخل رمز إعادة التعيين"),
+        "enterOTPSentTo": MessageLookupByLibrary.simpleMessage(
+            "أدخل رمز إعادة التعيين المرسل إلى"),
+        "enterYourEmail":
+            MessageLookupByLibrary.simpleMessage("أدخل بريدك الإلكتروني"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginToYourAccount":
             MessageLookupByLibrary.simpleMessage("قم بتسجيل الدخول إلى حسابك"),
         "name": MessageLookupByLibrary.simpleMessage("الاسم"),
+        "newPassword": MessageLookupByLibrary.simpleMessage("كلمة مرور جديدة"),
+        "next": MessageLookupByLibrary.simpleMessage("التالى"),
         "onboarding": MessageLookupByLibrary.simpleMessage("كل الخدمات لصحتك"),
+        "otpSent": MessageLookupByLibrary.simpleMessage(
+            "تم إرسال رمز إعادة التعيين بنجاح"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "phone": MessageLookupByLibrary.simpleMessage("الهاتف"),
         "register": MessageLookupByLibrary.simpleMessage("تسجيل"),
+        "resendOTP": MessageLookupByLibrary.simpleMessage("إعادة إرسال"),
+        "resetPassword":
+            MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage("مرحبا بعودتك!")
       };
 }

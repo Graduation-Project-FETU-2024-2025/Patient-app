@@ -24,20 +24,37 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account?"),
+        "confirmPassword":
+            MessageLookupByLibrary.simpleMessage("Confirm Password"),
         "doNotHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
+        "dontReceiveOTP":
+            MessageLookupByLibrary.simpleMessage("Didn\'t receive OTP?"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "enterNewPassword": MessageLookupByLibrary.simpleMessage(
+            "Enter a new password to reset the password on your account. We\'ll ask for this password whenever you log in."),
+        "enterOTP": MessageLookupByLibrary.simpleMessage("Enter OTP"),
+        "enterOTPSentTo":
+            MessageLookupByLibrary.simpleMessage("Enter OTP sent to"),
+        "enterYourEmail":
+            MessageLookupByLibrary.simpleMessage("Enter your email"),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password?"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginToYourAccount":
             MessageLookupByLibrary.simpleMessage("Login to your account"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
+        "newPassword": MessageLookupByLibrary.simpleMessage("New Password"),
+        "next": MessageLookupByLibrary.simpleMessage("Next"),
         "onboarding": MessageLookupByLibrary.simpleMessage(
             "All Services for your health"),
+        "otpSent":
+            MessageLookupByLibrary.simpleMessage("OTP sent successfully"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
+        "resendOTP": MessageLookupByLibrary.simpleMessage("Resend OTP"),
+        "resetPassword": MessageLookupByLibrary.simpleMessage("Reset Password"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back!")
       };
 }

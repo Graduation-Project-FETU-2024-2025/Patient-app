@@ -5,4 +5,6 @@ abstract class Routing {
   static const String signUp = '/signUp';
   static const String main = '/main';
   static const String forgetPassword = '/forgetPassword';
+  static const String restPassword = '/restPassword';
+  static const String emailView = '/emailView';
 }
