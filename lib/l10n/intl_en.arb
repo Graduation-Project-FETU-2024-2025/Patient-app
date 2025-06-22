@@ -21,5 +21,7 @@
         "resetPassword":"Reset Password",
         "enterNewPassword":"Enter a new password to reset the password on your account. We'll ask for this password whenever you log in.",
         "newPassword":"New Password",
-        "confirmPassword":"Confirm Password"
+        "confirmPassword":"Confirm Password",
+        "someThingWentWrong":"Something went wrong",
+        "passwordResetSuccess":"Password reset successfully"
 }

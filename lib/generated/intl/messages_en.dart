@@ -51,10 +51,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "otpSent":
             MessageLookupByLibrary.simpleMessage("OTP sent successfully"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "passwordResetSuccess":
+            MessageLookupByLibrary.simpleMessage("Password reset successfully"),
         "phone": MessageLookupByLibrary.simpleMessage("Phone"),
         "register": MessageLookupByLibrary.simpleMessage("Register"),
         "resendOTP": MessageLookupByLibrary.simpleMessage("Resend OTP"),
         "resetPassword": MessageLookupByLibrary.simpleMessage("Reset Password"),
+        "someThingWentWrong":
+            MessageLookupByLibrary.simpleMessage("Something went wrong"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage("Welcome Back!")
       };
 }

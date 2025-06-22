@@ -279,6 +279,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Something went wrong`
+  String get someThingWentWrong {
+    return Intl.message(
+      'Something went wrong',
+      name: 'someThingWentWrong',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password reset successfully`
+  String get passwordResetSuccess {
+    return Intl.message(
+      'Password reset successfully',
+      name: 'passwordResetSuccess',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

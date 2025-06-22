@@ -21,6 +21,8 @@
         "resetPassword":"إعادة تعيين كلمة المرور",
         "enterNewPassword":"أدخل كلمة مرور جديدة لإعادة تعيين كلمة المرور على حسابك. سنطلب منك هذه الكلمة السرية كلما قمت بتسجيل الدخول.",
         "newPassword":"كلمة مرور جديدة",
-        "confirmPassword":"تأكيد كلمة المرور"
+        "confirmPassword":"تأكيد كلمة المرور",
+        "someThingWentWrong":"حدث خطأ ما",
+        "passwordResetSuccess":"تم إعادة تعيين كلمة المرور بنجاح"
 
 }
