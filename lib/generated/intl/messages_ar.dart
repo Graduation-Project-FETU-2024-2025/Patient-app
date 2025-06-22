@@ -51,11 +51,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "otpSent": MessageLookupByLibrary.simpleMessage(
             "تم إرسال رمز إعادة التعيين بنجاح"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "passwordResetSuccess": MessageLookupByLibrary.simpleMessage(
+            "تم إعادة تعيين كلمة المرور بنجاح"),
         "phone": MessageLookupByLibrary.simpleMessage("الهاتف"),
         "register": MessageLookupByLibrary.simpleMessage("تسجيل"),
         "resendOTP": MessageLookupByLibrary.simpleMessage("إعادة إرسال"),
         "resetPassword":
             MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
+        "someThingWentWrong":
+            MessageLookupByLibrary.simpleMessage("حدث خطأ ما"),
         "welcomeBack": MessageLookupByLibrary.simpleMessage("مرحبا بعودتك!")
       };
 }
