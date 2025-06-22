@@ -11,6 +11,7 @@ import 'package:patient_app/features/forget_password/presentation/view/reset_pas
 import 'package:patient_app/features/forget_password/presentation/view_model/otp_cubit/otp_cubit.dart';
 import 'package:patient_app/features/forget_password/presentation/view_model/reset_password_cubit/reset_password_cubit.dart';
 import 'package:patient_app/features/forget_password/presentation/view_model/send_otp_cubit/send_otp_cubit.dart';
+import 'package:patient_app/features/main/presentation/view/main_view.dart';
 import 'package:patient_app/features/onboarding/presentation/view/onboarding_view.dart';
 import 'package:patient_app/features/sign_in/data/repository/sign_in_repo.dart';
 import 'package:patient_app/features/sign_in/presentation/view/sign_in_view.dart';
@@ -63,7 +64,7 @@ class AppRouters {
           ),
         ));
       case Routing.main:
-        return _buildRoute(const Scaffold());
+        return _buildRoute(const MainView());
       default:
         return _buildRoute(
           Scaffold(
